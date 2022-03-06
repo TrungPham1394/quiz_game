@@ -28,10 +28,10 @@ else:
 
 question_3 = input("\nWhat is the capital city of California? ")
 if question_3.lower() == 'sacramento':
-    print("Correct! Onto the last question")
+    print("Correct! Onto the last question.")
     score += 1
 else:
-    print("Incorrect! Onto the last question")
+    print("Incorrect! Onto the last question.")
 
 
 question_4 = input("\nHow many stars are there on the USA flag? ")
