@@ -1,0 +1,48 @@
+reply = input("Hello there, would you like to take the quiz? Please reply by saying either yes or no. ")
+if reply.lower() == 'yes':
+    print("Okay then, let's proceed!")
+    score = 0
+elif reply.lower() == "no":
+    print("Alright then, goodbye.")
+    exit()
+else:
+    print("Sorry, that input was invalid. Please try again and select either yes or no.")
+    exit()
+
+
+question_1 = input("\nWho was the first president of United States of America? ")
+if question_1.lower() == 'george washington':
+    print("Correct! Onto the next question.")
+    score += 1
+else:
+    print("Incorrect! Onto the next question")
+
+
+question_2 = input("\nWho is the current president right now in United States of America? " )
+if question_2.lower() == 'joe biden':
+    print("Correct! Onto the next question.")
+    score += 1
+else:
+    print("Incorrect! Onto the next question.")
+
+
+question_3 = input("\nWhat is the capital city of California? ")
+if question_3.lower() == 'sacramento':
+    print("Correct! Onto the last question")
+    score += 1
+else:
+    print("Incorrect! Onto the last question")
+
+
+question_4 = input("\nHow many stars are there on the USA flag? ")
+if question_4.lower() == '50':
+    print("Correct! Let's see how many questions you have gotten right.")
+    score += 1
+elif question_4.lower() == 'fifty':
+    print("Correct! Let's see how many questions you have gotten right.")
+    score += 1
+else:
+    print("Incorrect! Let's see how many questions you have gotten right.")
+
+
+print(f"\nYou scored {str((score / 4 ) * 100)}% on the quiz and got {score} out of 4 questions right.")
